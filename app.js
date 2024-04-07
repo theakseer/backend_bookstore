@@ -22,8 +22,8 @@ app.use(cors()); // for every x origin
 
 // for every x
 app.get('/', (req, res) => {
-    console.log(req);
-    return res.status(404).send("Welcoe to MERN Stack projectk")
+    // console.log(req);
+    return res.send("Welcoe to MERN Stack projectk")
 })
 
 app.use('/books', booksRouter)
