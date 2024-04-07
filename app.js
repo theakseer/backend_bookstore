@@ -38,3 +38,5 @@ mongoose.connect(process.env.MONGO_DB_URL)
     .catch(err => {
         console.log(err);
     });
+
+    module.exports = app
