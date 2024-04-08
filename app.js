@@ -13,12 +13,12 @@ app.use(express.urlencoded({ extended: true })); // Parse URL-encoded bodies
 app.use(express.json()); // Parse JSON bodies
 
 
-app.use(cors()); // for every x origin
-// app.use(cors({
-//     origin: 'http://localhost:3000',
-//     methods: ['GET', 'POST', 'PUT', 'DELETE'],
-//     allowedHeaders: ['content-type']
-// }));
+// app.use(cors()); // for every x origin
+app.use(cors({
+    origin: 'https://books-store-cyan.vercel.app',
+    methods: ['GET', 'POST', 'PUT', 'DELETE'],
+    allowedHeaders: ['content-type']
+}));
 
 // for every x
 app.get('/', (req, res) => {
