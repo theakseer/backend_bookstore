@@ -23,7 +23,7 @@ app.use(cors({
 // for every x
 app.get('/', (req, res) => {
     // console.log(req);
-    return res.send("Welcoe to MERN Stack projectk")
+    return res.send("Welcome to mern stack project! <br/><a href='https://books-store-cyan.vercel.app/' >Click here</a> to see in an interactive view.");
 })
 
 app.use('/books', booksRouter)
